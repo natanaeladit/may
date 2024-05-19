@@ -15,6 +15,6 @@ impl HttpService for HelloWorld {
 
 // Start the server in `main`.
 fn main() {
-    let server = HttpServer(HelloWorld).start("0.0.0.0:8080").unwrap();
+    let server = HttpServer(HelloWorld).start("0.0.0.0:80").unwrap();
     server.join().unwrap();
 }
